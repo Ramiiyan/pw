@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>User Card - {{$user->name ?? ''}}</title>
+    <title>User Card - {{$user->name}}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}" />
@@ -11,9 +11,9 @@
 <div id="wrapper">
     <section id="main">
         <header>
-            <span class="avatar"><img src="images/users/{{$user->id ?? 'a'}}.jpg" alt="" /></span>
-            <h1>{{$user->name ?? 'Tharinda'}}</h1>
-            <p>{{nl2br($user->comments ?? 'comment' )}}</p>
+            <span class="avatar"><img src="{{asset('images/users/'.$user->id.'.jpg')}}" alt="user image" /></span>
+            <h1>{{$user->name}}</h1>
+            <p>{{nl2br($user->comments)}}</p>
         </header>
     </section>
     <footer id="footer">
