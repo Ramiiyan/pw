@@ -47,3 +47,7 @@ To check the validation make sure to enable "accept: application/json" headers
 - Arguments     
     - user : The id of the user to retrieved
     - comments : The comment to be appended
+
+
+#### Database
+Set the database to "postgres" and port to 5432 in the .env file
