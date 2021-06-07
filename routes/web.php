@@ -17,5 +17,5 @@ Route::get('/', function () {
     return view('test');
 });
 
-Route::get('user/{id}', [\App\Http\Controllers\UserController::class, 'index']);
-//Route::post('user/{id}', [\App\Http\Controllers\UserController::class, 'store']);
+Route::get('user/{id}', [\App\Http\Controllers\UserController::class, 'index'])->whereNumber('id');
+Route::post('user', [\App\Http\Controllers\UserController::class, 'update']);
