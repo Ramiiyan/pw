@@ -12,7 +12,7 @@ class UpdateUser extends Command
      *
      * @var string
      */
-    protected $signature = 'user:update {user : id of the user} {comments*: comments to append}';
+    protected $signature = 'user:update {user : id of the user} {comments* : comments to append}';
 
     /**
      * The console command description.
