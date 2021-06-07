@@ -18,5 +18,10 @@ class UserSeeder extends Seeder
            'name'=> 'Tharinda',
            'comments'=> 'my comment'
         ]);
+
+        User::create([
+            'name'=> 'John Doe',
+            'comments'=> 'John\'s comment'
+        ]);
     }
 }
