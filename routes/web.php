@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('test');
+    return view('welcome');
 });
 
 Route::get('user/{id}', [\App\Http\Controllers\UserController::class, 'index'])->whereNumber('id');
