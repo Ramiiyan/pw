@@ -36,7 +36,7 @@ class UserController extends Controller
                 abort(500, 'Could Not update Database');
             }
 
-            abort(200, 'OK');
+            return response('OK', 200);
 
         } catch (ModelNotFoundException $e) {
             abort(404, 'No such User 2');
